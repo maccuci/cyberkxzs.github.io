@@ -6,6 +6,8 @@
     --body-color: #1f0054;
 
     --white-color: #FFF;
+	--black-color: hsl(var(--hue-color), 4%, 4%);
+	--container-color: hsl(var(--hue-color), 4%, 10%);
 
     --body-font: 'JetBrains Mono', sans-serif;
     --biggest-font-size: 5rem;
@@ -17,6 +19,9 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
     --text-line-height: 2rem;
+	
+	--z-tooltip: 10;
+    --z-fixed: 100;
 }
 
 @media screen and (min-width: 968px){
@@ -56,4 +61,27 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  background-color: var(--container-color);
+  border-radius: .25rem;
+  padding: .45rem;
+  opacity: 9;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover {
+  background-color: var(--black-color);
+  opacity: 1;
+}
+
+.scrollup__icon {
+  color: var(--white-color);
+  font-size: 1.35rem;
 }
