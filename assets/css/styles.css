@@ -3,7 +3,7 @@
 :root {
     --text-color: hsl(var(--hue-color), 4%, 75%);
     --text-color-light: hsl(var(--hue-color), 4%, 65%);
-    --body-color: #000000;
+    --body-color: #1f0054;
 
     --white-color: #FFF;
 
