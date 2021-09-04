@@ -1,40 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-
+    <meta charset="utf-8" />
     <title>Tony Kxzs</title>
-</head>
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/png" href="img/simple.png" />
 
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=JetBrains+Mono:300,400,500,600,700" rel="stylesheet"
+        type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- END HEAD -->
+
+<!-- BODY -->
+
+<body id="body" data-spy="scroll" data-target=".header">
+
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Navegação por toque</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#body">Início</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#skills">Projetos</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
         </nav>
-        <div class="nav_menu" id="nav-menu">
-            <ul class="nav_list">
-                <li class="nav_item">
-                    <a href="#" class="nav_link active-link">Início</a>
-					<a href="odus/index.html" class="nav_link active-link">Odus Bot</a>
-                </li>
-            </ul>
-        </div>
+        <!-- Navbar -->
     </header>
 
-		<a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-s-line scrollup__icon"></i>
-        </a>
-        
-		
-	<footer class="footer section">
-		<p class="footer__copy">
-            <a href="https://twitter.com/goatvenni" target="_blank" class="active-link footer__copy-link">&#169; Tony Kxzs. All right reserved</a>
-        </p>
-	</footer>
-	
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/main.js"></script>
+    <!--========== SLIDER ==========-->
+    <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="./img/background.gif">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="promo-block-divider">
+                        <h1 class="promo-block-title">Tony Kxzs<br/></h1>
+                        <p class="promo-block-text">Backend Developer</p>
+                    </div>
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/cyberkxzs" target="_blank" class="social-icons"><i
+                                    class="icon-social-github"></i></a></li>
+                        <li><a href="https://twitter.com/goatvenni" target="_blank" class="social-icons"><i
+                                    class="icon-social-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== SLIDER ==========-->
+
+    <!--========== PAGE LAYOUT ==========-->
+
+    <!-- Skills -->
+    <div id="skills">
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="container content-lg">
+                <div class="row">
+                    <div class="col-sm-3 sm-margin-b-30">
+                        <div class="text-right sm-text-left">
+                            <h2 class="margin-b-0">Projetos</h2>
+                            <p>Alguns projetos privados e para a comunidade.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-1">
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <div class="margin-b-60">
+                                <h5><img src="img/odus-logo.png" width="35" height="35">  Odus Bot</h5>
+                                <p>Um projeto voltado para o discord, um bot para tocar e controlar músicas.</p>
+                                <a href="https://discord.com/api/oauth2/authorize?client_id=881652799849500672&permissions=8&scope=applications.commands%20bot"
+                                    target="_blank"><i class="service-icon icon-envelope"></i> Convide-me</a>
+                            </div>
+                            <div class="margin-b-60">
+                                <h5>Venni Tech</h5>
+                                <p>Um projeto de uma startup voltada para montagem e manutenção de computadores LowEnd e
+                                    HighEnd.</p>
+                                <a href="https://twitter.com/vennitech" target="_blank"><i
+                                        class="service-icon icon-social-twitter"></i> Twitter</a>
+                                <a href="https://vennitech.net" target="_blank"><i class="service-icon icon-tag"></i>
+                                    Site</a>
+                            </div>
+                            <div class="margin-b-60">
+                                <h5>Maccuci</h5>
+                                <p>Um projeto focado no futuro. Não posso dar muitos detalhes, mas em breve será algo grande.</p>
+                                <a href="https://maccuci.com/reserved-spaces"
+                                    target="_blank"><i class="service-icon icon-pencil"></i> Reserve uma Vaga</a>
+                            </div>
+                        </div>
+                        <!--// end row -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Skills -->
+        </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="bg-color-sky-light">
+            <div class="container content-lg">
+                <div class="row">
+                    <div class="col-sm-3 sm-margin-b-30">
+                        <div class="text-right sm-text-left">
+                            <h2 class="margin-b-0">Contato</h2>
+                            <p>Algumas formas de contato.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                <h5><i class="service-icon icon-screen-tablet"></i> Discord</h5>
+                                <a>zyr aorus#0001</a>
+                                <a href="https://discord.com/channels/@me" target="_blank"
+                                    class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+        >
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Início</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery.appear.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+
 </body>
+<!-- END BODY -->
+
 </html>
